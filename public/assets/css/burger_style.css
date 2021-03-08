@@ -1,0 +1,13 @@
+html {    
+    background: url("../img/burger.png") no-repeat center fixed;     
+    background-size: cover;
+}
+
+div {
+    background-color: white;
+    margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
+    
+}
