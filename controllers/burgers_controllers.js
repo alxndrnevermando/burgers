@@ -4,7 +4,7 @@ const router = express.Router();
 const burger = require("../models/burger");
 
 router.get("/", function (req, res) {
-    cat.all(function (data) {
+    burger.selectAll(function (data) {
         var hbsObject = {
             burgers: data
         };
@@ -14,7 +14,7 @@ router.get("/", function (req, res) {
 });
 
 router.post("/api/burgers", function (req, res) {
-    cat.create([
+    burger.insertOne([
         "burger_name", "devoured"
     ], [
         req.body.burger_name, req.body.devoured
