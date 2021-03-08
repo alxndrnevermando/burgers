@@ -29,7 +29,7 @@ router.put("/api/burgers/:id", function (req, res) {
 
     console.log("condition", condition);
 
-    burgers.update({
+    burger.updateOne({
         devoured: req.body.devoured
     }, condition, function (result) {
         if (result.changedRows == 0) {
@@ -41,4 +41,4 @@ router.put("/api/burgers/:id", function (req, res) {
     });
 });
 
-module.exports = router;4
+module.exports = router;
